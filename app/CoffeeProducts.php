@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class CoffeeProducts extends Model
+class  CoffeeProducts extends Model
 {
     protected $fillable = ['imagePath', 'title', 'description', 'price'];
 }

@@ -19,7 +19,7 @@ class CreateCoffeeProductsTable extends Migration
             $table->string('imagePath');
             $table->string('title');
             $table->text('description');
-            $table->integer();
+            $table->integer('price');
         });
     }
 

@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
@@ -18,6 +17,7 @@ class CreateUserTable extends Migration
             $table->timestamps();
             $table->string('email')->unique();
             $table->string('password');
+            $table->rememberToken();
 
             
         });
@@ -28,8 +28,8 @@ class CreateUserTable extends Migration
      *
      * @return void
      */
-    public function down()
-    {
-        Schema::drop('user');
-    }
+    // public function down()
+    // {
+        // Schema::drop('users');
+    // }
 }
